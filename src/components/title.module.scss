@@ -1,0 +1,23 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textWrapper h2 {
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+.iconWrapper {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

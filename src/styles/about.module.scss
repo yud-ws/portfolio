@@ -1,0 +1,28 @@
+.profileWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto 0;
+  padding: 1rem 0;
+}
+
+.imageWrapper {
+  width: 33%;
+}
+
+.imageWrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.textWrapper {
+  width: 62%;
+  text-align: left;
+}
+
+.textWrapper li {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}

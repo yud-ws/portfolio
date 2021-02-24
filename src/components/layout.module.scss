@@ -1,0 +1,99 @@
+.navigation {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  // position: fixed;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 700px;
+  list-style: none;
+}
+
+.colorNav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 650px;
+  list-style: none;
+}
+
+.colorNav button {
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  outline: none;
+  // background: transparent;
+  cursor: pointer;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.colorNavButton1 {
+  background: #0d0015;
+}
+
+.colorNavButton2 {
+  background: #412e49;
+}
+
+.colorNavButton3 {
+  background: #00552e;
+}
+
+.colorNavButton4 {
+  background: #640125;
+}
+
+.colorNavButton5 {
+  background: #0f2350;
+}
+
+.colorNavButton6 {
+  background: #726250;
+}
+
+.container {
+  min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  position: relative; /* ←相対位置 */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 60px; /* ←フッターの高さを指定 */
+  box-sizing: border-box;
+}
+
+.container footer {
+  position: absolute; /* ←絶対位置 */
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+}
+
+.footerText {
+  margin-top: 1rem;
+}
+
+.page {
+  text-align: center;
+  padding: 5rem 1rem 0;
+}
+
+.canvas {
+  background: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}

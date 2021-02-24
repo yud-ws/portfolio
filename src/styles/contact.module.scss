@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.wrapper a {
+  color: #007bff;
+}
+
+.twitter,
+.github {
+  width: 50%;
+  display: flex;
+}
+
+.twitter {
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.github {
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
+.box1 {
+  width: 40%;
+}
+
+.box2 {
+  width: 40%;
+}
+
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.wrapper span {
+  display: block;
+  font-size: 2em;
+}
+
+.text {
+  margin: 0;
+  font-size: 1.2rem;
+}

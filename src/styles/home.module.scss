@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 100%;
+  margin: 5rem auto 0;
+}
+
+.wrapper h1 {
+  font-size: 4rem;
+}
+
+.aboutLink {
+  margin-top: 5rem;
+}
+
+.aboutLink a {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.wrapper button {
+  background: cyan;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
