@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             className={styles.colorPicker}
             type="color"
             defaultValue={color}
-            onBlur={(e) => setColor(e.target.value)}
+            onChange={(e) => setColor(e.target.value)}
           />
         </div>
       </div>

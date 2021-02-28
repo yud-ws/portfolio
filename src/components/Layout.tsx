@@ -30,7 +30,7 @@ const Layout: React.FC = ({ children }) => {
           </p>
         </footer>
         <div className={styles.canvas}>
-          <Canvas camera={{ position: [0, 0, 100] }}>
+          <Canvas camera={{ position: [0, 0, 30] }}>
             <Background color={color} />
           </Canvas>
         </div>

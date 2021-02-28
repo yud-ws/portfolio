@@ -13,7 +13,7 @@ const getRandomArbitrary = (min: number, max: number): number => {
 const BackDrop: React.FC = () => {
   return (
     <mesh receiveShadow position={[0, -1, -5]}>
-      <planeBufferGeometry attach="geometry" args={[500, 500]} />
+      <planeBufferGeometry attach="geometry" args={[100, 70]} />
       <meshStandardMaterial attach="material" color="white" />
     </mesh>
   )
@@ -24,10 +24,10 @@ const PointLight: React.FC<LightProps> = ({ color }) => {
 
   const minBrightness = 0.3
   const maxBrightness = 1
-  const maxX = 100
-  const minX = -100
-  const maxY = 100
-  const minY = -100
+  const maxX = 20
+  const minX = -20
+  const maxY = 30
+  const minY = -30
   const maxZ = 0
   const minZ = -4
 
@@ -62,7 +62,7 @@ const PointLight: React.FC<LightProps> = ({ color }) => {
       setPosition(
         new Vector3(
           position.x,
-          position.y + getRandomArbitrary(0.001, 0.05),
+          position.y + getRandomArbitrary(0.001, 0.01),
           position.z
         )
       )
@@ -85,7 +85,7 @@ const Background: React.FC<LightProps> = ({ color }) => {
   return (
     <>
       <BackDrop />
-      {[...Array(20)].map((_, index) => {
+      {[...Array(5)].map((_, index) => {
         return <PointLight key={index} color={color} />
       })}
     </>
