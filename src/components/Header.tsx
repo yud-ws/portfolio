@@ -14,7 +14,7 @@ const SpNav: React.FC<Props> = ({ isOpen, setIsOpen }) => {
   else
     return (
       <nav className={styles.spNavigation}>
-        <ul>
+        <ul onClick={() => setIsOpen(false)}>
           {links.map((text) => {
             return (
               <li key={text} onClick={() => setIsOpen(false)}>

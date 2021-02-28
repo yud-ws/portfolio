@@ -1,6 +1,7 @@
 .pcNavigation {
   text-align: center;
-  width: 100%;
+  // width: 50%;
+  flex-grow: 1;
 }
 
 .header {
@@ -16,9 +17,11 @@
 }
 
 .header .box1 {
-  width: 50px;
-  margin-left: 1rem;
+  // width: 50px;
+  height: 100%;
+  // margin-left: 1rem;
   position: relative;
+  flex-grow: 2;
 }
 
 .header .box1 a img {
@@ -31,28 +34,39 @@
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto; /*上下左右中央に*/
+  margin: auto 1rem; /*上下左右中央に*/
   width: 50px; /*widthの指定は必須*/
   height: 50px;
 }
 
 .pcNavigation ul {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  vertical-align: middle;
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin: auto;
   list-style: none;
 }
 
+.pcNavigation ul li {
+  width: 100%;
+  align-items: center;
+}
+
 .pcNavigation ul li a {
-  transition: color 0.3s;
+  display: block;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
 }
 
 .pcNavigation ul li a:hover {
   color: #00ff00;
+  transform: scale(1.3, 1.3);
 }
 
 .spNavigation {
