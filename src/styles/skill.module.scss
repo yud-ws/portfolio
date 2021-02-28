@@ -2,3 +2,10 @@
   width: 80%;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 640px) {
+  .cardWrapper {
+    width: 95%;
+    margin: 0 auto 5rem;
+  }
+}

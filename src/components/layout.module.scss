@@ -1,65 +1,32 @@
-.navigation {
+.pcNavigation {
   text-align: center;
-  padding-top: 2rem;
+  width: 100%;
+  // align-items: center;
+  // padding-top: 2rem;
 }
 
 .header {
-  margin-bottom: 2rem;
-  // position: fixed;
-}
-
-.navigation ul {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.pcNavigation ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: auto;
   max-width: 700px;
   list-style: none;
-}
-
-.colorNav {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  max-width: 650px;
-  list-style: none;
-}
-
-.colorNav button {
-  font-size: 2rem;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  outline: none;
-  // background: transparent;
-  cursor: pointer;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.colorNavButton1 {
-  background: #0d0015;
-}
-
-.colorNavButton2 {
-  background: #412e49;
-}
-
-.colorNavButton3 {
-  background: #00552e;
-}
-
-.colorNavButton4 {
-  background: #640125;
-}
-
-.colorNavButton5 {
-  background: #0f2350;
-}
-
-.colorNavButton6 {
-  background: #726250;
 }
 
 .container {
@@ -69,23 +36,28 @@
   padding-right: 1rem;
   padding-bottom: 60px; /* ←フッターの高さを指定 */
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-.container footer {
+.footer {
   position: absolute; /* ←絶対位置 */
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 3rem;
   text-align: center;
+  font-size: 1em;
 }
 
 .footerText {
   margin-top: 1rem;
 }
 
-.page {
+.main {
   text-align: center;
-  padding: 5rem 1rem 0;
+  padding-top: 7rem;
+  width: 100%;
+  z-index: -1;
 }
 
 .canvas {
@@ -97,3 +69,128 @@
   right: 0;
   z-index: -1;
 }
+
+.spNavigation {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  // .pcNavigation {
+  //   display: none;
+  // }
+  .container {
+    padding: 0;
+  }
+
+  .main {
+    text-align: center;
+    padding-top: 4rem;
+    width: 100%;
+  }
+}
+
+//   .spNavigation {
+//     z-index: 1;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//     display: block;
+//     width: 100%;
+//     background: rgba(0, 0, 0, 0.8);
+//     opacity: 0;
+//     transform: translateY(-100%);
+//     transition: all 0.2s ease-in-out;
+//   }
+//   .hamburger {
+//     position: relative;
+//     display: block;
+//     width: 30px;
+//     height: 25px;
+//     margin: 0 0 0 auto;
+//   }
+//   .hamburger span {
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     display: block;
+//     width: 100%;
+//     height: 2px;
+//     background-color: #fff;
+//     transform: translateY(-50%);
+//   }
+//   #hamburger::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 2px;
+//     background-color: #fff;
+//   }
+//   .hamburger::after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 70%;
+//     height: 2px;
+//     background-color: #fff;
+//   }
+//   /*スマホメニュー*/
+//   .spNavigation ul {
+//     padding: 0;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
+//   }
+//   .spNavigation li {
+//     margin: 0;
+//     padding: 0;
+//   }
+//   .spNavigation li span {
+//     font-size: 15px;
+//     color: #fff;
+//   }
+//   .spNavigation li a,
+//   .sp-nav li span {
+//     display: block;
+//     padding: 20px 0;
+//   }
+//   /*-閉じるアイコンー*/
+//   .spNavigation .close {
+//     position: relative;
+//     padding-left: 20px;
+//   }
+//   .spNavigation .close::before {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     display: block;
+//     width: 16px;
+//     height: 1px;
+//     background: #fff;
+//     transform: rotate(45deg);
+//   }
+//   .spNavigation .close::after {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     display: block;
+//     width: 16px;
+//     height: 1px;
+//     background: #fff;
+//     transform: rotate(-45deg);
+//   }
+//   .toggle {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }

@@ -30,7 +30,11 @@ const Card: React.FC<Props> = ({ title, desc }) => {
                   <td>{skill.skillName}</td>
                   <td>{skill.year} 年</td>
                   <td>
-                    <Rating initialRating={skill.level} readonly />
+                    {/* <Rating initialRating={skill.level} readonly /> */}
+                    <span
+                      className={styles.star5Rating}
+                      data-rate={skill.level}
+                    ></span>
                   </td>
                 </tr>
               )

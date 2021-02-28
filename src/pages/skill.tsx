@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { GiSkills } from 'react-icons/gi'
 import Title from '../components/Title'
 import Card from '../components/Card'
@@ -26,7 +27,7 @@ const Skill: React.FC = () => {
         {
           skillName: 'Kotlin',
           year: 0.5,
-          level: 3,
+          level: 2.5,
         },
       ],
     },
@@ -34,9 +35,14 @@ const Skill: React.FC = () => {
       title: 'ライブラリ・フレームワーク',
       desc: [
         {
-          skillName: 'React.js(Next.js)',
+          skillName: 'React.js',
           year: 1,
-          level: 4,
+          level: 3.5,
+        },
+        {
+          skillName: 'Next.js',
+          year: 1,
+          level: 3.5,
         },
         {
           skillName: 'Vue.js',
@@ -58,8 +64,11 @@ const Skill: React.FC = () => {
   ]
   return (
     <>
+      <Head>
+        <title>skill | yudai portfolio</title>
+      </Head>
       <Title title="skill">
-        <GiSkills size="4em" />
+        <GiSkills size="3.5em" />
       </Title>
       <div className={styles.cardWrapper}>
         {skills.map((skill) => {

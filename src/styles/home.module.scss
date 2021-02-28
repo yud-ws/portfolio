@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 100%;
-  margin: 5rem auto 0;
+  margin: 8rem auto 0;
 }
 
 .wrapper h1 {
@@ -9,6 +9,7 @@
 
 .aboutLink {
   margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
 .aboutLink a {
@@ -22,4 +23,36 @@
   border-radius: 5px;
   border: none;
   outline: none;
+}
+
+.colorPickerWrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.colorPickerWrapper h2 {
+  line-height: 2rem;
+}
+
+.colorPicker {
+  margin-left: 1rem;
+  height: 2rem;
+  // font-size: 2rem;
+  // background: none;
+  // border: none;
+  // outline: none;
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .aboutLink {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }

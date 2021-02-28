@@ -1,11 +1,9 @@
-import { useRef, useState, useMemo } from 'react'
+import { useRef, useState } from 'react'
 import { useFrame } from 'react-three-fiber'
-import { Vector3, Mesh, Light } from 'three'
+import { Vector3, Light } from 'three'
 
 type LightProps = {
-  // brightness: number
   color: string
-  // position: Vector3
 }
 
 const getRandomArbitrary = (min: number, max: number): number => {
@@ -83,12 +81,12 @@ const PointLight: React.FC<LightProps> = ({ color }) => {
   )
 }
 
-const Background: React.FC = () => {
+const Background: React.FC<LightProps> = ({ color }) => {
   return (
     <>
       <BackDrop />
-      {[...Array(13)].map((_, index) => {
-        return <PointLight key={index} color={'#00ff00'} />
+      {[...Array(20)].map((_, index) => {
+        return <PointLight key={index} color={color} />
       })}
     </>
   )

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { FaEnvelope } from 'react-icons/fa'
 import Title from '../components/Title'
 import styles from '../styles/contact.module.scss'
@@ -5,8 +6,11 @@ import styles from '../styles/contact.module.scss'
 const Contact: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>contact | yudai portfolio</title>
+      </Head>
       <Title title="contact">
-        <FaEnvelope size="4em" />
+        <FaEnvelope size="3.5em" />
       </Title>
       <p className={styles.text}>
         何かあった場合は Twitter の DM からご連絡ください。

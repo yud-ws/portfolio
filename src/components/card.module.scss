@@ -40,3 +40,76 @@
 .table th {
   padding: 10px;
 }
+
+.star5Rating {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  color: #818181; /* グレーカラー 自由に設定化 */
+  /*font-size: 30px; フォントサイズ 自由に設定化 */
+}
+
+.star5Rating:before,
+.star5Rating:after {
+  content: '★★★★★';
+}
+
+.star5Rating:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #ffee00; /* イエローカラー 自由に設定化 */
+}
+
+.star5Rating[data-rate='5']:after {
+  width: 100%;
+} /* 星5 */
+.star5Rating[data-rate='4.5']:after {
+  width: 90%;
+} /* 星4.5 */
+.star5Rating[data-rate='4']:after {
+  width: 80%;
+} /* 星4 */
+.star5Rating[data-rate='3.5']:after {
+  width: 70%;
+} /* 星3.5 */
+.star5Rating[data-rate='3']:after {
+  width: 60%;
+} /* 星3 */
+.star5Rating[data-rate='2.5']:after {
+  width: 50%;
+} /* 星2.5 */
+.star5Rating[data-rate='2']:after {
+  width: 40%;
+} /* 星2 */
+.star5Rating[data-rate='1.5']:after {
+  width: 30%;
+} /* 星1.5 */
+.star5Rating[data-rate='1']:after {
+  width: 20%;
+} /* 星1 */
+.star5Rating[data-rate='0.5']:after {
+  width: 10%;
+} /* 星0.5 */
+.star5Rating[data-rate='0']:after {
+  width: 0%;
+} /* 星0 */
+
+@media screen and (max-width: 640px) {
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .table {
+    table-layout: fixed;
+    font-size: 20px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+}

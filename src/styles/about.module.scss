@@ -26,3 +26,29 @@
   font-size: 20px;
   margin-bottom: 0.5rem;
 }
+
+@media screen and (max-width: 640px) {
+  .profileWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .imageWrapper {
+    margin-bottom: 2rem;
+  }
+
+  .textWrapper {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .textWrapper ul {
+    list-style: none;
+  }
+
+  .textWrapper ul li {
+    line-height: 1.6;
+  }
+}
