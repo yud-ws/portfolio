@@ -5,7 +5,7 @@ import styles from '../styles/about.module.scss'
 
 const About: React.FC = () => {
   const profileTexts = [
-    '名前: Yudai Shiraishi',
+    '名前: 白石祐大 ( Yudai Shiraishi )',
     '出身: 福岡県',
     '学歴: 法政大学情報科学部(2019卒)',
     `活動: 大学時代の卒業研究では Three.js を用いた絵画のモデリングを行う。

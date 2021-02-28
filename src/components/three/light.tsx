@@ -62,7 +62,7 @@ const PointLight: React.FC<LightProps> = ({ color }) => {
       setPosition(
         new Vector3(
           position.x,
-          position.y + getRandomArbitrary(0.001, 0.01),
+          position.y + getRandomArbitrary(0.001, 0.02),
           position.z
         )
       )

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useState, Dispatch, SetStateAction } from 'react'
 import styles from './header.module.scss'
 
-const links = ['home', 'about', 'skill', 'contact']
+const links = ['home', 'about', 'skill', 'works', 'contact']
 
 type Props = {
   isOpen: boolean

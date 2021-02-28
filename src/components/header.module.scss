@@ -11,7 +11,6 @@
   left: 0;
   background: black;
   display: flex;
-  // justify-content: space-around;
   align-items: center;
   z-index: 1;
 }
@@ -19,14 +18,22 @@
 .header .box1 {
   width: 50px;
   margin-left: 1rem;
+  position: relative;
 }
 
 .header .box1 a img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  position: absolute;
   object-fit: contain;
   border-radius: 50%;
   border: 1px solid white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; /*上下左右中央に*/
+  width: 50px; /*widthの指定は必須*/
+  height: 50px;
 }
 
 .pcNavigation ul {
@@ -37,7 +44,6 @@
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: auto;
-  max-width: 700px;
   list-style: none;
 }
 
